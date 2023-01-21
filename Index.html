@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <link rel="stylesheet" href="cv2.css" />
+  <title>Mon CV</title>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="titre">Mon Portfolio</h1>
+        <ul id="menu">
+          <li><a href="#props">A propos</a></li>
+          <li><a href="#projs">Projets</a></li>
+          <li><a href="#lois">Loisirs</a></li>
+          <li><a href="#cont">Me Contacter</a></li>
+          <i class="fa-solid fa-xmark" onclick="fermermenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="ouvrirmenu()"></i>
+
+      </nav>
+      <div class="header-text">
+        <p>Bonjour, Je suis Mendrika RAJAONARISON</p>
+        <h1>Developpeur<br> Front-end</h1>
+      </div>
+    </div>
+  </div>
+  <!--Ma Description-->
+  <div id="propos">
+    <div class="container">
+      <div class="ligne">
+        <div class="propos-col-1">
+          <img src="/Assets/IMG_20230110_074738_195-removebg-preview.jpg">
+        </div>
+        <div class="propos-col-2">
+          <h1 class="sous-titre" id="props">A propos
+          </h1>
+          <p>Débutant dans le domaine de l'IT, je désire m'épanouir dans le métier du numérique. Etant férue
+            d'apprentissage et
+            d'acquisition de nouvelle connaissance, j'aime la mise en pratique de mes acquis pour renforcer mes
+            expériences.
+            Tels sont mes motivations pour entamer ma reconversion. Mon expérience professionnelle passée (en tant que
+            téléconseiller) m'a permis d'accroitre mon empathie envers mes interlocuteurs, de garder constamment mon
+            sang-froid et
+            d'avoir la rigueur de toujours apporter une solution face à un problème donné.
+            Le travail d'équipe me met à l'aise et je vois les nouveaux chalenges comme une opportunité de satisfaire ma
+            curiosité
+            intellectuelle.</p>
+          <div class="sous-titre2">
+            <p class="st-lien active-st" onclick="voir('form')">Formations et diplômes</p>
+            <p class="st-lien" onclick="voir('expr')">Expériences professionnelles</p>
+            <p class="st-lien" onclick="voir('comp')">Compétences</p>
+          </div>
+          <div class="contenu active-contenu" id="form">
+            <ul>
+              <li>2022<br><span>
+                  Concepteur Developpeur d'Application Numérique
+                </span><br>Inclusiv Academy</li>
+              <li>2021<br><span>
+                  MASTER 1 en Macroéconomie, Finances et Modélisation
+                </span><br>Université d'Ankatso</li>
+              <li>2020<br><span>
+                  License en Economie Mathématiques
+                </span><br>Université d'Ankatso</li>
+            </ul>
+          </div>
+          <div class="contenu" id="expr">
+            <ul>
+              <li>2022 <br><span>
+                  Création de l'application de bureau Samysamy
+                </span><br>Plateforme de mise en relation Freelance-Entreprise</li>
+              <li>2021 <br><span>
+                  Téléconseiller en e-commerce offshore
+                </span><br>ADM Value Tana</li>
+            </ul>
+          </div>
+          <div class="contenu" id="comp">
+            <ul>
+              <li><span>Langages</span><br>Java, C#</li>
+              <li><span>
+                  Technologies
+                </span><br>JEE : Jsp/Servlets/JSTL, JDBC, RMI, Struts, Hibernate, Spring, JSF, Ejb3, JPA, WebServices
+                <br>
+                .Net : WinForm, ASP.NET, WebServices <br>
+                Web : HTML, CSS, XML, Javascript, Ajax
+              </li>
+              <li><span>
+                  Outils
+                </span><br>PowerAMC, Eclipse, Visual Studio,
+                Net Bean, Proteus, Flowcode,
+                Visual Paradigm, WampServer,
+                TeamViewer
+              </li>
+              <li>
+                <span>Base de données</span><br>Oracle (SQL-PL/SQL), SQL Server, MySQL
+              </li>
+              <li><span>
+                  Méthodologies
+                </span><br>Merise, Méthodes Agiles, SCRUM, UML, Design Patterns
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Réalisation-->
+  <div id="projets">
+    <div class="container">
+      <h1 class="sous-titre" id="projs">Mes projets</h1>
+      <div class="liste-projet">
+        <div class="projet">
+          <img src="/Assets/logo3.png" alt="Annuaire universitaire">
+          <div class="layer">
+            <h3>Annuaire universitaire</h3>
+            <p>Une application desktop regroupant une liste d'étudiant de différentes université repartis sur plusieurs
+              localité en France et ailleurs. Elle permet aussi d'ajouter ou de supprimer ou de modifier les
+              informations des étudiants dans la liste. Elle embarque également une fonctionnalité permetant d'exporter
+              les informations voulus ou d'importer des données supplémentaires.</p>
+          </div>
+        </div>
+        <div class="projet">
+          <img src="/Assets/logo_samysamy-removebg-preview.png" alt="Samysamy">
+          <div class="layer">
+            <h3>Samysamy</h3>
+            <p>Une application desktop de plateforme de mise en relation Freelance-Entreprise. Elle permet aux
+              freelances d'offrir leurs services en fonction de leurs copmpétences et les juniors bénéficient d'une
+              visibilité supplémentaires par rapport aux autres profils. Les entreprise quant à elles peuvent publier
+              leurs offres, effectuer leurs transactions directement sur la plateforme par rapport aux missions
+              accomplis et êtres notifier de l'état d'avancement de leurs offres.</p>
+          </div>
+        </div>
+        <div class="projet">
+          <img src="/Assets/MicrosoftTeams-image (4).png" alt="FAM-e">
+          <div class="layer">
+            <h3>FAM-e</h3>
+            <p>Une application web qui mets relation les associations et les financeurs. L'accès aux financement des
+              projets des associations est facilité et les financeurs peuvent effectuer directement leurs virements via
+              le site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Loisirs-->
+  <div id="loisirs">
+    <div class="container">
+      <h1 class="sous-titre" id="lois">Mes loisirs</h1>
+      <div class="liste-loisirs">
+        <div>
+          <i class="fa-solid fa-book"></i>
+          <h2>Lecture</h2>
+          <p>Roman, Histoire et Articles.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-video"></i>
+          <h2>Medias</h2>
+          <p>Documentaires et Films.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>Jeux video</h2>
+          <p>RPG, Jeux de strategie, Foot et FPS.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-dog"></i>
+          <h2>Dressage canin</h2>
+          <p>Programmation d'instruction, toiletage et nutrition équilibrée.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="ligne">
+        <div class="contact-gauche">
+          <h1 class="sous-titre" id="cont">
+            Me Contacter
+          </h1>
+          <p><i class="fa-solid fa-envelope"></i>rajaonarisonmendrikanyaina@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>0349193071</p>
+          <div class="icon-contact">
+            <a href="https://www.facebook.com/aina.rajaonarison.3" target="_blank"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mendrika-ny-aina-rajaonarison-0b3346232" target="_blank"><i
+                class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href=""><i class="fa-brands fa-instagram"></i> </a>
+          </div>
+        </div>
+        <div class="contact-droite">
+          <form>
+            <input type="text" placeholder="Votre Nom" required>
+            <input type="text" placeholder="Votre Prénom" required>
+            <input type="tel" id="tel" placeholder="Numéro de Téléphone" required>
+            <p id="erreur"></p>
+            <input type="email" id="mail" placeholder="Email" required>
+            <p id="erreur2"></p>
+            <textarea rows="3" placeholder="Votre Message"></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/fd6ef1f7ab.js" crossorigin="anonymous"></script>
+  <script TYPE="TEXT/JAVASCRIPT" src="/cv2.js">
+  </script>
+</body>
+
+</html>
